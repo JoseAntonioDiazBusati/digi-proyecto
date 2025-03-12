@@ -4,5 +4,3 @@ Este proyecto implementa un sistema de almacenamiento basado en una pila, donde 
 - Estructura de datos basada en una pila.
 - Permite almacenar archivos en la pila sin eliminación automática.
 - Recuperación de archivos en orden inverso al de su inserción.
-- Interfaz de línea de comandos o aplicación web para gestionar los archivos.
-- Posibilidad de cifrado para proteger los archivos almacenados.
