@@ -1,4 +1,4 @@
-# Digi-Proyecto: Agenda local en Kotlin
+# Module Digi-Proyecto
 
 Una solución ligera y funcional para la gestión de contactos y datos personales, desarrollada en Kotlin y diseñada para ejecutarse en entornos locales sin necesidad de conexión a internet ni bases de datos externas. Ideal para organizaciones que buscan digitalizar su gestión personal sin complejidades técnicas.
 

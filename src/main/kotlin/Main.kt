@@ -37,7 +37,7 @@ class FileStack(private val storageDir: String = "storage") {
     }
     /**
      * Recupera el último archivo añadido a la pila. Elimina su registro de `stack.txt`,
-     * pero **no elimina el archivo físicamente** del directorio de almacenamiento.
+     * pero no elimina el archivo físicamente del directorio de almacenamiento.
      *
      * @return Ruta absoluta del archivo recuperado o `null` si no hay archivos.
      */
