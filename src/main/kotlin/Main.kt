@@ -30,9 +30,9 @@ class FileStack(private val storageDir: String = "storage") {
             val destination = File("$storageDir/${file.name}")
             file.copyTo(destination, overwrite = true) // Copia el archivo al almacenamiento
             File(stackFile).appendText("${file.name}\n") // Registra el archivo en la pila
-            println("✅ Archivo '${file.name}' almacenado.")
+            println("Archivo '${file.name}' almacenado.")
         } else {
-            println("❌ El archivo no existe.")
+            println("El archivo no existe.")
         }
     }
     /**
@@ -44,7 +44,7 @@ class FileStack(private val storageDir: String = "storage") {
     fun pop(): String? {
         val stack = File(stackFile).readLines()
         if (stack.isEmpty()) {
-            println("⚠ No hay archivos en la pila.")
+            println("No hay archivos en la pila.")
             return null
         }
 
@@ -54,7 +54,7 @@ class FileStack(private val storageDir: String = "storage") {
 
         val fileToRetrieve = File("$storageDir/$lastFile")
         if (fileToRetrieve.exists()) {
-            println("📂 Archivo recuperado: ${fileToRetrieve.name}")
+            println("Archivo recuperado: ${fileToRetrieve.name}")
             return fileToRetrieve.absolutePath
         }
         return null
@@ -66,9 +66,9 @@ class FileStack(private val storageDir: String = "storage") {
     fun listFiles() {
         val files = File(stackFile).readLines()
         if (files.isEmpty()) {
-            println("📂 La pila está vacía.")
+            println("La pila está vacía.")
         } else {
-            println("📜 Archivos en la pila:")
+            println("Archivos en la pila:")
             files.reversed().forEach { println(" - $it") }
         }
     }
@@ -88,28 +88,28 @@ fun main() {
     while (true) {
         println(
             """
-            |📂 Gestor de Archivos
-            |1️⃣ Agregar archivo
-            |2️⃣ Recuperar último archivo
-            |3️⃣ Mostrar archivos en la pila
-            |4️⃣ Salir
-            |👉 Elige una opción:
+            | Gestor de Archivos
+            | Agregar archivo
+            | Recuperar último archivo
+            | Mostrar archivos en la pila
+            | Salir
+            | Elige una opción:
             """.trimMargin()
         )
 
         when (readLine()?.toIntOrNull()) {
             1 -> {
-                print("📂 Ruta del archivo a almacenar: ")
+                print("Ruta del archivo a almacenar: ")
                 val path = readLine().orEmpty()
                 stack.push(path)
             }
             2 -> stack.pop()
             3 -> stack.listFiles()
             4 -> {
-                println("👋 ¡Hasta luego!")
+                println("¡Hasta luego!")
                 break
             }
-            else -> println("❌ Opción no válida.")
+            else -> println("Opción no válida.")
         }
     }
 }
