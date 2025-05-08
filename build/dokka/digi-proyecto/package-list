@@ -1,0 +1,11 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:org.example////PointingToDeclaration/digi-proyecto/org.example/index.html
+$dokka.location:org.example//main/#/PointingToDeclaration/digi-proyecto/org.example/main.html
+$dokka.location:org.example/FileStack///PointingToDeclaration/digi-proyecto/org.example/-file-stack/index.html
+$dokka.location:org.example/FileStack/FileStack/#kotlin.String/PointingToDeclaration/digi-proyecto/org.example/-file-stack/-file-stack.html
+$dokka.location:org.example/FileStack/listFiles/#/PointingToDeclaration/digi-proyecto/org.example/-file-stack/list-files.html
+$dokka.location:org.example/FileStack/pop/#/PointingToDeclaration/digi-proyecto/org.example/-file-stack/pop.html
+$dokka.location:org.example/FileStack/push/#kotlin.String/PointingToDeclaration/digi-proyecto/org.example/-file-stack/push.html
+org.example
+

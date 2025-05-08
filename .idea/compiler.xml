@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="digi-proyecto" target="21" />
+      <module name="digi-proyecto.main" target="21" />
+      <module name="digi-proyecto.test" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
